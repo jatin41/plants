@@ -18,7 +18,7 @@ from fastai.vision.all import *
 app = Flask(__name__)
 
 # Load your FastAI model
-learn = load_learner('/content/drive/MyDrive/models/my_model.pkl')
+learn = load_learner('my_model.pkl')
 
 def preprocess_image(image_b64):
     # Convert base64 image to bytes
